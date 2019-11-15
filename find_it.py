@@ -12,7 +12,7 @@ def find_it(seq: list):
 
 def find_it2(seq: list):
     """ Input: an array with only one integer that appears an odd number of times.
-       Output: integer that appears an odd number of times.
-       v.2.0
+        Output: integer that appears an odd number of times.
+        v.2.0
     """
     return [x for x in seq if seq.count(x) % 2 != 0][0]
