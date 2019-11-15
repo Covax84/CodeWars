@@ -1,5 +1,5 @@
 def dir_reduc(arr):
-    """ take an array of strings and returns an array of
+    """ Takes an array of strings and returns an array of
         strings with the needless directions removed
         (solution using dictionary)
     """
