@@ -8,6 +8,3 @@ def tribonacci(signature: list, n: int):
         return array
     else:
         return array[:n]
-
-
-# print(tribonacci([1, 1, 1], 10))
