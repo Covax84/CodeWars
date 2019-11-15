@@ -9,7 +9,3 @@ def split_to_pairs(s):
     for i in range(0, len(s)-1, 2):
         array.append(s[i]+s[i+1])
     return array
-
-
-# print(split_to_pairs("asdfadsf"))    # correct answer: ['as', 'df', 'ad', 'sf']
-# print(split_to_pairs("asdfads"))     # correct answer: ['as', 'df', 'ad', 's_']
