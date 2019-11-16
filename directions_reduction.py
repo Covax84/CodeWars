@@ -1,6 +1,6 @@
 def dir_reduc(arr):
-    """ Takes an array of strings and returns an array of
-        strings with the needless directions removed
+    """ Input: array of strings(directions)
+        Output: new array of strings with the needless directions removed
         (solution using dictionary)
     """
     dictionary = {"NORTH": "SOUTH", "SOUTH": "NORTH", "WEST": "EAST", "EAST": "WEST"}
