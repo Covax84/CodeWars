@@ -1,6 +1,7 @@
 def tribonacci(signature: list, n: int):
-    """ Fibonacci function that given a signature array/list,
-        returns the first n elements - signature included of the so seeded sequence. """
+    """ Input: 'signature' - an array(first 3 elements of tribonacci sequence) integer: n
+        Output: first n elements of tribonacci sequence with 'signature' included.
+    """
     array = [] + signature + [0] * (n - len(signature))
     if n >= 3:
         for i in range(3, n):
