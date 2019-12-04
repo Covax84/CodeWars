@@ -1,4 +1,4 @@
-def rot13(message: str):
+def rot13(message: str) -> str:
     """ Input: string
         Output: string where every letter replaced with the 13th letter after it, in the alphabet.
     """
