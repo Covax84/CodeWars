@@ -1,5 +1,6 @@
-def split_to_pairs(s):
-    """ splits the string into pairs of two characters.
+def split_to_pairs(s: str) -> list:
+    """ Input: string
+        Output: list of splitted pairs of two characters,
         If the string contains an odd number of characters then
         it should replace the missing second character of the final pair
         with an underscore ('_'). """
