@@ -1,4 +1,4 @@
-def tribonacci(signature: list, n: int):
+def tribonacci(signature: list, n: int) -> list:
     """ Input: 'signature' - an array(first 3 elements of tribonacci sequence) integer: n
         Output: first n elements of tribonacci sequence with 'signature' included.
     """
