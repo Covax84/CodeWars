@@ -1,4 +1,4 @@
-def namelist_old(names: list):
+def namelist_old(names: list) -> str:
     """ Given: an array containing hashes of names
         Return: a string formatted as a list of names
         separated by commas except for the last two names,
@@ -16,7 +16,7 @@ def namelist_old(names: list):
     return answer_string
 
 
-def namelist(names):
+def namelist(names: list) -> str:
     """ Input: an array containing hashes of names
         Output: a string formatted as a list of names
         separated by commas except for the last two names,

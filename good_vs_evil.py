@@ -1,5 +1,10 @@
-def goodVsEvil(good, evil):
-    """ https://www.codewars.com/kata/good-vs-evil/train/python """
+def goodVsEvil(good: str, evil: str) -> str:
+    """ Input: two strings with the number of good and evil units.
+        Output: battle result message.
+        
+        For actual understanding read kata description:
+        https://www.codewars.com/kata/good-vs-evil/train/python
+    """
     good_units = {0: 1, 1: 2, 2: 3, 3: 3, 4: 4, 5: 10}
     evil_units = {0: 1, 1: 2, 2: 2, 3: 2, 4: 3, 5: 5, 6: 10}
 
@@ -20,3 +25,4 @@ def goodVsEvil(good, evil):
         return "Battle Result: Evil eradicates all trace of Good"
     else:
         return "Battle Result: No victor on this battle field"
+    

@@ -1,4 +1,4 @@
-def find_outlier(integers: list):
+def find_outlier(integers: list) -> int:
     """ Input: array of integers.
         Output: array element that is a single odd or a single even number.
         No memory waste ;)
@@ -14,6 +14,6 @@ def find_outlier(integers: list):
                 return integers[i + 1]
 
 
-print(find_outlier([2, 4, 3]))  # 3
-print(find_outlier([2, 4, 0, 100, 4, 11, 2602, 36]))  # 11
-print(find_outlier([160, 3, 1719, 19, 11, 13, -21]))  # 160
+# print(find_outlier([2, 4, 3]))  # 3
+# print(find_outlier([2, 4, 0, 100, 4, 11, 2602, 36]))  # 11
+# print(find_outlier([160, 3, 1719, 19, 11, 13, -21]))  # 160
