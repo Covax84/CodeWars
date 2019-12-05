@@ -1,4 +1,4 @@
-def sort_array(source_array):
+def sort_array(source_array: list) -> list:
     """ Input: array of numbers.
         Output: same array where odd numbers are sorted but even numbers on their places.
     """
