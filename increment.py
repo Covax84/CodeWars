@@ -1,4 +1,4 @@
-def increment_string(strng):
+def increment_string(strng: str) -> str:
     """ Input: string that ends with a number or not
         Output: if string ends with a number: string with last number incremented by 1,
                 otherwise: string with appended number 1.
