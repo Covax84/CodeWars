@@ -1,4 +1,4 @@
-def dir_reduc(arr):
+def dir_reduc(arr: list) -> list:
     """ Input: array of strings(directions)
         Output: new array of strings with the needless directions removed
         (solution using dictionary)
@@ -10,7 +10,7 @@ def dir_reduc(arr):
     return new_arr
 
 
-def dir_reduc_no_dict(arr):
+def dir_reduc_no_dict(arr: list) -> list:
     """ Takes an array of strings and returns an array of
         strings with the needless directions removed
         (solution with no dictionary) - actually can't pass some tests :(
