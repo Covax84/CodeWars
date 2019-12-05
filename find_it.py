@@ -1,4 +1,4 @@
-def find_it(seq: list):
+def find_it(seq: list) -> int:
     """ Input: an array with only one integer that appears an odd number of times.
         Output: integer that appears an odd number of times.
     """
@@ -10,7 +10,7 @@ def find_it(seq: list):
             return k
 
 
-def find_it2(seq: list):
+def find_it2(seq: list) -> int:
     """ Input: an array with only one integer that appears an odd number of times.
         Output: integer that appears an odd number of times.
         v.2.0
