@@ -1,4 +1,4 @@
-def spin_words(sentence):
+def spin_words(sentence: str) -> str:
     """
     :param sentence: Text as string
     :return: Same text where words with length >= 5 reversed
