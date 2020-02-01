@@ -1,2 +1,2 @@
 # CodeWars
-Some kata solutions from https://Codewars.com/
+Some solutions for https://Codewars.com/
