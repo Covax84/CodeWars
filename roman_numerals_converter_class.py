@@ -4,31 +4,31 @@ class RomanNumerals:
     """
 
     @staticmethod
-    def from_roman(self):
+    def from_roman(roman: str) -> int:
         roman_to_arabic = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1}
         answer_arabic = 0
 
-        if len(self) == 1:
-            return roman_to_arabic[self]
+        if len(roman) == 1:
+            return roman_to_arabic[roman]
 
-        for i in range(len(self) - 1):
-            if roman_to_arabic[self[i]] >= roman_to_arabic[self[i + 1]]:
-                answer_arabic += roman_to_arabic[self[i]]
-                if i == len(self) - 2:
-                    answer_arabic += roman_to_arabic[self[i + 1]]
+        for i in range(len(roman) - 1):
+            if roman_to_arabic[roman[i]] >= roman_to_arabic[roman[i + 1]]:
+                answer_arabic += roman_to_arabic[roman[i]]
+                if i == len(roman) - 2:
+                    answer_arabic += roman_to_arabic[roman[i + 1]]
             else:
-                answer_arabic += roman_to_arabic[self[i + 1]] - roman_to_arabic[self[i]]
+                answer_arabic += roman_to_arabic[roman[i + 1]] - roman_to_arabic[roman[i]]
         return answer_arabic
 
     @staticmethod
-    def to_roman(self):
+    def to_roman(arabic: int) -> str:
         arabic_to_roman = {1000: 'M', 500: 'D', 100: 'C', 50: 'L', 10: 'X', 5: 'V', 1: 'I'}
 
-        if len(str(self)) > 3:
-            my_digit = str(self)[-3:]
-            answer_roman = 'M' * int(str(self)[:-3])
+        if len(str(arabic)) > 3:
+            my_digit = str(arabic)[-3:]
+            answer_roman = 'M' * int(str(arabic)[:-3])
         else:
-            my_digit = str(self)
+            my_digit = str(arabic)
             answer_roman = ''
 
         upper, middle, lower = 100, 50, 10
