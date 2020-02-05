@@ -1,4 +1,4 @@
-def solution(string: str, markers: list) -> str:
+def string_stripped_by_markers(string: str, markers: list) -> str:
     """ Input: string and list of markers
         Output: stripped string (without everything to the right of the markers)
     """
@@ -10,5 +10,5 @@ def solution(string: str, markers: list) -> str:
     return '\n'.join(array)
 
 
-# solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"])
-# result should == "apples, pears\ngrapes\nbananas"
+# given params: "apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]
+# result should be: "apples, pears\ngrapes\nbananas"
