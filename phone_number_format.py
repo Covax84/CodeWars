@@ -4,3 +4,7 @@ def create_phone_number(n: list) -> str:
     """
     m = ''.join([str(x) for x in n])
     return '({}) {}-{}'.format(m[:3], m[3:-4], m[-4:])
+
+
+def create_phone_number_star(n: list) -> str:
+    return '({}{}{}) {}{}{}-{}{}{}{}'.format(*n)
