@@ -1,4 +1,4 @@
-def is_isogram(string) -> bool:
+def is_isogram(string: str) -> bool:
     """ Input: string
         Output: True if string is an isogram, otherwise False
     """
